@@ -4,6 +4,16 @@
 
   .intro {
 
+    // MVP
+    .banner-img {
+      .renderBannerImg();
+
+      @media @phone {
+        height: 13vh;
+        border-radius: 0;
+      }
+    }
+
     h2 {
       padding: 15px;
     }
@@ -24,8 +34,22 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    }
-  }
+
+      @media @phone {
+        &:nth-child(2) {
+        display: none;
+        }
+
+        &:nth-child(3) {
+          display: none;
+        }
+
+        &:nth-child(1) {
+          width: 100%;
+        }
+      } // closes media quarry 
+    } // closes img
+  } // closes .space-images
 
   .visit-planets {
     padding: 15px;
@@ -46,8 +70,18 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column-reverse;
+      padding: 4% 1.5%;
+      margin-top: 10px;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,6 +92,23 @@
       }
 
       .btn {
+        .signUp(@btn-bg-color, white, 2.3%, 3%, 1.8rem);
+        width: 100%;
+        &:hover {
+          .signUp(white, @btn-bg-color, 2.3%, 3%, 1.8rem);
+          width: 100%;
+        }
+
+
+        @media @phone {
+          .signUp(@btn-bg-color, white, 5%, 3%, 1.8rem);
+          width: 100%;
+
+          &:hover {
+            .signUp(white, @btn-bg-color, 5%, 3%, 1.8rem);
+            width: 100%;
+          }
+        }
       }
     }
 
@@ -65,6 +116,11 @@
       width: 46%;
       margin-left: 4%;
       
+      @media @phone {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 6%;
+      }
       img {
         width: 100%;
         height: auto;
