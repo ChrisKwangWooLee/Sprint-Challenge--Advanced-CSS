@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpaceWalkers</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu"
+      rel="stylesheet"
+    />
+    <link href="css/index.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- navigation code here -->
+    <nav>
+      <h1>SpaceWalkers</h1>
+      <div class="navigation-bar">
+        <a href="./index.html">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="./contact.html">Contact</a>
+        <a href="#">Sign In</a>
+      </div>
+    </nav>
+
+    <div class="container home">
+      <header class="intro">
+        <!-- image code here -->
+        <img
+          class="banner-img"
+          src="./img/contact-header.jpg"
+          alt="view of the earth horizaon from the space"
+        />
+
+        <section class="contact-top">
+            <form action="kl467@cornell.edu" class="contact-form">
+                <h1>Contact us</h1>
+                <p>Got a question? We'd love to hear from you!</br >We'll respond as soon as possible.</br>
+            For general inquiries check out our <a href="#" class="FAQ">FAQ Page</a></p>
+                <div class="contact-form-line"></div>
+
+                <section class="inputs">
+                    <div class="contact-form-row">
+                        <select name="launch" class="select-field-1">
+                            <option value="request">Type of request...</option>
+                            <option value="prospective-student">Prospective Student</option>
+                            <option value="media">Media</option>
+                            <option value="current-student">Current Student</option>
+                            <option value="partner">Partner</option>
+                            <option value="recruiter">Recruiter/hiring Manager</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="contact-form-row">
+                        <input class="text-field-1" type="text" name="firstName" placeholder="First Name" maxlength="256">
+                        <input class="text-field-1" type="text" name="firstName" placeholder="Last Name" maxlength="256">
+                    </div>
+                    <div class="contact-form-row">
+                        <input class="text-field-2" type="email" name="email" placeholder="Email"maxlength="556">
+                    </div>
+                    <div class="contact-form-row">
+                        <input class="text-field-3" type="text" name="company" placeholder="Company">
+                    </div>
+                    <div class="contact-form-row">
+                        <input class="text-field-4" type="text" name="message" placeholder="Message">
+                    </div>
+                </section>
+            </form>
+        </section>
+
+      <footer>
+        <p>Copyright SpaceWalkers 2018</p>
+      </footer>
+    </div>
+  </body>
+</html>

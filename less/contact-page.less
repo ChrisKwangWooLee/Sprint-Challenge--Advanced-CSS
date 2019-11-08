@@ -1,0 +1,77 @@
+/* * * * * * CONTACT * * * * * */
+.intro .banner-img {
+    height: 13vh;
+}
+
+.contact-top form {
+    .displayFlex(column);
+    text-align: center;
+    justify-content: center;
+    padding: 10% 0;
+    background: #f6f7fb;
+    padding-bottom: 7vh;
+    border-radius: 10px;
+
+    h1 {
+        font-size: 4rem;;
+        font-weight: 800;
+    }
+
+    p {
+        margin-top: 2%;
+        font-size: 1.5rem;
+        color: @header-font-color;
+
+        .FAQ {
+            text-decoration: none;
+            color: @header-font-color;
+            font-weight: 900;
+        }
+    } // closes p
+
+    .contact-form-line {
+        height: 0.3vh;
+        width: 15%;
+        background: @header-font-color;
+        margin: 3% auto;
+    }
+
+    .inputs {
+        .displayFlex(column);
+        align-items: center;
+        height: 40%;
+        justify-content: space-between;
+
+        .contact-form-row {
+            width: 50%;
+
+            @media @phone {
+                width: 75%;
+            }
+            .displayFlex(row);
+            justify-content: space-between;
+
+            .text-field-1 {
+                .textFieldRender(49%, 0.7vh, 5px);
+            }
+
+            .text-field-2 {
+                .textFieldRender(100%, 0.7vh, 5px);
+            }
+
+            .text-field-3 {
+                .textFieldRender(100%, 0.7vh, 5px);
+            }
+
+            .text-field-4 {
+                .textFieldRender(100%, 0.7vh, 5px);
+            }
+
+            .select-field-1 {
+                .textFieldRender(50%, 0.7vh, 5px);
+                margin: 3% auto;
+            }
+
+        }
+    } // closes .inputs
+} // closes form

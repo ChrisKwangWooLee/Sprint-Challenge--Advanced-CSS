@@ -1,1 +1,28 @@
 // Mixins Here
+.displayFlex(@direction) {
+    display: flex;
+    flex-direction: @direction;
+}
+
+.renderBannerImg() {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.signUp(@bgColor:black, @fontColor:red, @paddingTB: 2.3%, @paddingLR:3%, @fontSize:1.8rem) {
+    background: @bgColor;
+    color: @fontColor;
+    padding: @paddingTB @paddingLR;
+    width: 30%;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.textFieldRender(@width, @height, @borderRadius) {
+    background: #FFF;
+    border: 1px solid #dadde9;
+    width: @width;
+    padding: @height 0;
+    border-radius: @borderRadius;
+}
