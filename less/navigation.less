@@ -7,9 +7,26 @@ nav {
     background:  @wild-sand;
     font-family: @river-bend;
 
+    //  Stretch 3
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    background: fade(@wild-sand, 80%);
+
     h1{
         padding: 1% 0;
         font-size: 4rem;
+
+        // Stretch 2
+        animation: titleAnimation 1s 1s 1 normal forwards;
+        @keyframes titleAnimation {
+            from {
+                transform: scale(3);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
     }
 
     .navigation-bar{

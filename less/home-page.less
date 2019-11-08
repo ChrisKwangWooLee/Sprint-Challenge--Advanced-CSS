@@ -2,6 +2,11 @@
 
 .home {
 
+  margin-top: 10.9%;
+
+  @media @phone {
+    margin-top: 18%;
+  }
   .intro {
 
     // MVP
@@ -126,6 +131,56 @@
         height: auto;
         border-radius: 10px;
       }
+    }
+  }
+  
+  .subscribe form {
+
+    border-top: 1px solid @main-border-color;
+
+    padding-top: 4%;
+
+    h3 {
+      margin-bottom: 3%;
+      width: 100%;
+      text-align: center;
+
+      @media @phone {
+        font-size: 2rem;
+      }
+    }
+
+    width: 100%;
+    .displayFlex(column);
+    align-items: center;
+
+    .row-one {
+      width: 50%;
+      text-align: center;
+      .displayFlex(row);
+      justify-content: space-between;
+
+      input {
+        width: 49%;
+        padding: 2% 1%;
+        text-align: center;
+      }
+    } // closes .row-one
+
+    .row-two {
+      width: 50%;
+      text-align: center;
+
+      input {
+        width: 100%;
+        padding: 2% 1%;
+        margin: 1% 0;
+        text-align: center; 
+      }
+    }
+
+    .submit-btn {
+      margin: 2% 0;
     }
   }
 }// home
